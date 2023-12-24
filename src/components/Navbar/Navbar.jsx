@@ -48,7 +48,7 @@ const Navbar = () => {
     }, [currentPath]);
 
     return (
-        <div className={`${currentPath==='/'?'fixed':'sticky'} ${currentPath!=='/'?'bg-black':''} top-0 w-full ${scrollY > 100 && currentPath==='/' ? 'bg-black' : 'bg-transparent'}`} style={{ zIndex: '1000' }}> 
+        <div className={`${currentPath==='/'?'fixed':'sticky bg-black'} top-0 w-full ${scrollY > 100 ? 'bg-black' : ''}`} style={{ zIndex: '1000' }}> 
             <header className="lg:px-24 px-4 flex flex-col md:flex-row items-center justify-between py-4">
                 <div className="logo-div flex flex-row w-[90%] md:w-auto justify-between">
                     <div className="flex justify-between items-center">
