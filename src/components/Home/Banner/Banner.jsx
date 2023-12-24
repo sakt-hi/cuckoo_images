@@ -8,13 +8,13 @@ import 'swiper/css/navigation';
 import 'swiper/css/autoplay';
 
 import './Banner.css'
+import imageUrl from '../../../assets/banner/sample_banner.jpeg'
 
 // import required modules
 import { Pagination, Navigation,Autoplay } from 'swiper/modules';
 
 const Banner = () => {
 
-  const imageUrl = 'src/assets/banner/sample_banner.jpeg'
 
   return (
     <div >

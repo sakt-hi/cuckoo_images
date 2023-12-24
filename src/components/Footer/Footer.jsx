@@ -4,13 +4,14 @@ import IconMail from '../../assets/icons/IconMail'
 import IconFacebook from '../../assets/icons/IconFacebook'
 import IconInstagram from '../../assets/icons/IconInstagram'
 import IconLinkedIn from '../../assets/icons/IconLinkedIn'
+import cuckooImageLogo from '../../assets/cuckoologo_white.png'
 
 const Footer = () => {
   return (
     <div className="footer px-10 md:px-24 py-16 flex flex-col md:flex-row gap-12 md:gap-0 justify-between items-start md:items-center">
         <div className="logo flex flex-col gap-4 justify-center">
             <a href='/' className="text-xl">
-                <img src="src/assets/cuckoologo_white.png" className='opacity-50 w-24 md:w-32' alt="Cuckoo Images" />
+                <img src={cuckooImageLogo} className='opacity-50 w-24 md:w-32' alt="Cuckoo Images" />
             </a>
             <p className='copyrights text-gray-400 text-sm'>© Copyright 2023 Cuckoo Images. All rights reserved</p>
         </div>

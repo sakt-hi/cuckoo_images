@@ -7,6 +7,7 @@ import IconProjects from '../../assets/icons/IconProjects';
 import IconPricing from '../../assets/icons/IconPricing';
 import IconBlogs from '../../assets/icons/IconBlogs';
 import IconContactUs from '../../assets/icons/IconContactUs';
+import cuckooImageLogo from '../../assets/cuckoologo_white.png'
 
 const Navbar = () => {
 
@@ -52,7 +53,7 @@ const Navbar = () => {
                 <div className="logo-div flex flex-row w-[90%] md:w-auto justify-between">
                     <div className="flex justify-between items-center">
                         <a href='/' className="text-xl">
-                            <img src="src/assets/cuckoologo_white.png" style={{width:imageSize,height:'auto'}} alt="Cuckoo Images" />
+                            <img src={cuckooImageLogo} style={{width:imageSize,height:'auto'}} alt="Cuckoo Images" />
                         </a>
                     </div>
 
