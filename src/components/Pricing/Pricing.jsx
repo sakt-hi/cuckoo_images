@@ -79,7 +79,7 @@ const Pricing = () => {
             title:'Premium Plus',
             coverDesigns:'3',
             variations:'Color',
-            typesOfDesign:'3D, Typography, Stock Images, Unique Custom Illustration',
+            typesOfDesign:`3D, Typography, Stock Images, Unique Custom Illustration`,
             payment:'50% Advance',
             initialDesign:'6-7 days'
         },
@@ -132,11 +132,11 @@ const Pricing = () => {
             <h4 className='font-semibold text-[24px] pb-2 border-b-2 border-amber-400 sticky z-10 left-0'>Social Media Marketing Services</h4>
             <div className="scmcard flex flex-row justify-between gap-10 overflow-x-auto">
                 {socialMedia && socialMedia.map((item,index)=>(
-                    <div key={index} className='border-2 rounded-lg min-w-80'>
-                        <div className="title p-6 bg-black text-white font-semibold rounded-t-lg">
-                            <h2>{item.title} </h2>
+                    <div key={index} className='border border-amber-400 rounded-lg min-w-80'>
+                        <div className="title p-6 pb-2 font-semibold rounded-t-lg">
+                            <h2 className='text-[20px]'>{item.title} </h2>
                         </div>
-                        <ul className="list-disc p-6 px-10 space-y-4">
+                        <ul className="list-disc p-6 px-10 space-y-4 pb-12">
                             {item.info.split(',').map((point, index) => (
                                 <li key={index} className="mb-2">
                                 {point.trim()}
@@ -155,20 +155,20 @@ const Pricing = () => {
                     <ul className='flex flex-col gap-7'>
                         <li>Book Cover Designs</li>
                         <li>Variations</li>
-                        <li>Types of Design Covered</li>
+                        <li className='mb-16'>Types of Design Covered</li>
                         <li>Payment Terms</li>
                         <li>Initial Design Will Be</li>
                     </ul>
                 </div>
                 {bookCover.map((book,index)=>(
-                    <div key={index} className='flex flex-col gap-4 min-w-60 md:min-w-40 rounded-md border border-gray-400'>
-                        <div className="title bg-black rounded-t-md p-4 px-6">
-                            <h6 className='text-[20px] text-white font-semibold'>{book.title} </h6>
+                    <div key={index} className='flex flex-col gap-4 min-w-60 md:min-w-48 rounded-md border border-amber-400'>
+                        <div className="title rounded-t-md p-4 px-6">
+                            <h6 className='text-[20px] font-semibold'>{book.title} </h6>
                         </div>
                         <ul className="flex flex-col gap-3 mb-8 font-medium">
                             <li className='px-6'>{book.coverDesigns}</li><hr />
                             <li className='px-6'>{book.variations} </li><hr />
-                            <li className='px-6 min-h-12'>{book.typesOfDesign} </li><hr />
+                            <li className='px-6 min-h-24 max-w-48'>{book.typesOfDesign} </li><hr />
                             <li className='px-6'>{book.payment} </li><hr />
                             <li className='px-6'>{book.initialDesign} </li>
                         </ul>

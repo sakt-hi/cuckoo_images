@@ -8,7 +8,16 @@ import 'swiper/css/navigation';
 import 'swiper/css/autoplay';
 
 import './Banner.css'
-import imageUrl from '../../../assets/banner/sample_banner.jpeg'
+//import imageUrl from '../../../assets/banner/sample_banner.jpeg'
+import banner1 from '../../../assets/banner/archeology.gif'
+import banner2 from '../../../assets/banner/arnesh.gif'
+import banner3 from '../../../assets/banner/fandf.gif'
+import banner4 from '../../../assets/banner/friday.gif'
+import banner5 from '../../../assets/banner/inkstory .gif'
+import banner6 from '../../../assets/banner/magizh.gif'
+import banner7 from '../../../assets/banner/shades.gif'
+import banner8 from '../../../assets/banner/tdv.gif'
+import banner9 from '../../../assets/banner/tn37.gif'
 
 // import required modules
 import { Pagination, Navigation,Autoplay } from 'swiper/modules';
@@ -39,28 +48,43 @@ const Banner = () => {
         pagination={{
           clickable: true,
         }}
-        // autoplay={{
-        //   delay: 5000,
-        //   disableOnInteraction: false
-        // }}
+         autoplay={{
+          delay: 3000,
+          disableOnInteraction: false
+        }}
         modules={[Pagination, Navigation,Autoplay]}
         className="mySwiper"
         effect="fade"
         speed={2000}
       >
         <SwiperSlide>
-          <img src={imageUrl} alt="" />
+          <img src={banner1} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={imageUrl} alt="" />
+          <img src={banner2} alt="" />
         </SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        <SwiperSlide>
+          <img src={banner3} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={banner4} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={banner5} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={banner6} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={banner7} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={banner8} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={banner9} alt="" />
+        </SwiperSlide>
+        
       </Swiper>
     </div>
   )

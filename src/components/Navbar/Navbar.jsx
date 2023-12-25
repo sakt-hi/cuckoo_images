@@ -28,8 +28,10 @@ const Navbar = () => {
         imageSize = '30%'; // Adjust the size for medium screens
     }
 
+    let [isHidden, setHidden] = useState(false);
+
     function showDropdownOptions() {
-        document.getElementById("options").classList.toggle("hidden");
+        setHidden(!isHidden);
     }
 
     const [scrollY, setScrollY] = useState(0);
@@ -66,7 +68,7 @@ const Navbar = () => {
                     </button>
                 </div>
 
-                <ul id='options' className='flex md:hidden list-none flex-col gap-8 items-start bg-black text-white w-[100%] p-8'>
+                {isHidden && <ul id='options' className='flex list-none flex-col gap-8 items-start bg-black text-white w-[100%] p-8'>
                     <li>
                     <NavLink to="/" exact='true' className="md:py-2 px-0 flex items-center gap-1.5" activeClassName="active">
                         <IconHome /> Home
@@ -97,7 +99,7 @@ const Navbar = () => {
                         <IconContactUs /> Contact Us
                     </NavLink>
                     </li>
-                </ul>
+                </ul>}
 
                 <div className="hidden md:flex md:items-center md:w-auto w-full" id="menu">
                 <nav>
