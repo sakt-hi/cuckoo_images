@@ -19,6 +19,17 @@ import banner7 from '../../../assets/banner/shades.gif'
 import banner8 from '../../../assets/banner/tdv.gif'
 import banner9 from '../../../assets/banner/tn37.gif'
 
+import img1 from '../../../assets/banner/01.jpeg'
+import img3 from '../../../assets/banner/03.jpeg'
+import img4 from '../../../assets/banner/04.jpeg'
+import img5 from '../../../assets/banner/05.jpeg'
+import img6 from '../../../assets/banner/06.jpeg'
+import img7 from '../../../assets/banner/07.jpeg'
+import img8 from '../../../assets/banner/08.jpeg'
+import img9 from '../../../assets/banner/09.jpeg'
+import img10 from '../../../assets/banner/10.jpeg'
+
+
 // import required modules
 import { Pagination, Navigation,Autoplay } from 'swiper/modules';
 
@@ -57,7 +68,7 @@ const Banner = () => {
         effect="fade"
         speed={2000}
       >
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <img src={banner1} alt="" />
         </SwiperSlide>
         <SwiperSlide>
@@ -83,6 +94,33 @@ const Banner = () => {
         </SwiperSlide>
         <SwiperSlide>
           <img src={banner9} alt="" />
+        </SwiperSlide> */}
+        <SwiperSlide>
+          <img src={img1} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={img3} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={img4} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={img5} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={img6} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={img7} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={img8} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={img9} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={img10} alt="" />
         </SwiperSlide>
         
       </Swiper>
