@@ -10,6 +10,9 @@ import ContactUs from './components/Contact Us/ContactUs';
 import ScrollToTop from './ScrollToTop';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Projects from './components/Projects/Projects';
+import Blogs from './components/Blogs/Blogs';
+import Careers from './components/Careers/Careers';
 
 function App() {
 
@@ -34,7 +37,10 @@ function App() {
         <Routes>
           <Route path='/' exact element={<Home/>} />
           <Route path='/about' element={<About/>} />
+          <Route path='/projects' element={<Projects/>} />
           <Route path='/pricing' element={<Pricing/>} />
+          <Route path='/blogs' element={<Blogs/>} />
+          <Route path='/careers' element={<Careers/>} />
           <Route path='/contact' element={<ContactUs/>} />
         </Routes>
         <FloatingWhatsApp phoneNumber='919786493393' accountName='Cuckoo Images' avatar='src/assets/cuckoologo.png' />

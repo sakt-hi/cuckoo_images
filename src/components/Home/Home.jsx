@@ -69,6 +69,13 @@ const Home = () => {
                     </div>
                 ))}
                 </div>
+                <div className="feedback w-full flex flex-col gap-6 mt-10 items-center justify-center">
+                    <h4 className='text-xl font-medium' >Cuckoo images would love your feedback. Post a review to our profile.</h4>
+                    <a href='' className="relative inline-flex items-center px-6 py-2 overflow-hidden text-md font-medium text-amber-500 border border-amber-500 rounded-full hover:text-black group hover:bg-gray-50">
+                    <span className="absolute left-0 block w-full h-0 transition-all bg-amber-400 opacity-100 group-hover:h-full top-1/2 group-hover:top-0 duration-400 ease"></span>
+                    <span className="relative font-semibold">Click here</span>
+                    </a>
+                </div>
             </div>
         </div>
     </div>

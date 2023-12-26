@@ -8,6 +8,7 @@ import IconPricing from '../../assets/icons/IconPricing';
 import IconBlogs from '../../assets/icons/IconBlogs';
 import IconContactUs from '../../assets/icons/IconContactUs';
 import cuckooImageLogo from '../../assets/cuckoologo_white.png'
+import IconCareers from '../../assets/icons/IconCareers';
 
 const Navbar = () => {
 
@@ -90,8 +91,13 @@ const Navbar = () => {
                     </NavLink>
                     </li>
                     <li>
-                    <NavLink to="/blog" className="md:py-2 px-0 flex items-center gap-1.5" activeClassName="active">
+                    <NavLink to="/blogs" className="md:py-2 px-0 flex items-center gap-1.5" activeClassName="active">
                         <IconBlogs /> Blog
+                    </NavLink>
+                    </li>
+                    <li>
+                    <NavLink to="/careers" className="md:py-2 px-0 flex items-center gap-1.5" activeClassName="active">
+                        <IconCareers /> Careers
                     </NavLink>
                     </li>
                     <li>
@@ -125,8 +131,13 @@ const Navbar = () => {
                         </NavLink>
                         </li>
                         <li>
-                        <NavLink to="/blog" className="md:py-2 px-0 flex items-center gap-1.5 hover:border-b hover:border-white" activeClassName="active">
+                        <NavLink to="/blogs" className="md:py-2 px-0 flex items-center gap-1.5 hover:border-b hover:border-white" activeClassName="active">
                             <IconBlogs /> Blog
+                        </NavLink>
+                        </li>
+                        <li>
+                        <NavLink to="/careers" className="md:py-2 px-0 flex items-center gap-1.5 hover:border-b hover:border-white" activeClassName="active">
+                            <IconCareers /> Careers
                         </NavLink>
                         </li>
                         <li>
