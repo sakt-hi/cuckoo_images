@@ -7,7 +7,7 @@ import IconProjects from '../../assets/icons/IconProjects';
 import IconPricing from '../../assets/icons/IconPricing';
 import IconBlogs from '../../assets/icons/IconBlogs';
 import IconContactUs from '../../assets/icons/IconContactUs';
-import cuckooImageLogo from '../../assets/cuckoologo_white.png'
+import cuckooImageLogo from '../../assets/cuckoologo.png'
 import IconCareers from '../../assets/icons/IconCareers';
 
 const Navbar = () => {
@@ -109,7 +109,7 @@ const Navbar = () => {
 
                 <div className="hidden md:flex md:items-center md:w-auto w-full" id="menu">
                 <nav>
-                    <ul className="md:flex items-center justify-between gap-8 text-lg text-white pt-4 md:pt-0">
+                    <ul className="md:flex items-center justify-between gap-8 text-lg text-black pt-4 md:pt-0">
                         <li>
                         <NavLink to="/" exact='true' className="md:py-2 px-0 flex items-center gap-1.5 hover:border-b hover:border-white" activeClassName="active">
                             <IconHome /> Home

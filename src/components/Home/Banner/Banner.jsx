@@ -38,7 +38,7 @@ const Banner = () => {
 
   return (
     <div >
-        <div className='absolute top-0 z-10 flex flex-col gap-5 items-start justify-center h-[95vh] w-[100%] bg-gradient-to-b from-black to-transparent'>
+        <div className='absolute top-0 z-10 flex flex-col gap-5 items-start justify-center h-[95vh] w-[100%] bg-transparent'>
           <div className='flex flex-col justify-between items-start mx-10 md:mx-24'>
             <h2 className='text-[40px] font-bold text-white drop-shadow-xl mb-4' >
               Join with us, <br />We create <span className='text-amber-400'>unique</span> identity to your brand
